@@ -40,7 +40,8 @@ aws eks --region us-west-2 update-kubeconfig --name my-cluster
 3. **Initialize the SDK and configure kubectl**:
 ```sh
 gcloud init
-gcloud container clusters get-credentials my-cluster --zone us-central1-a --project my-project
+gcloud container clusters create demo-cluster --machine-type=e2-micro --zone=asia-south2-a --num-nodes=3
+gcloud container clusters list
 ```
 
 ### 3. **DigitalOcean**
